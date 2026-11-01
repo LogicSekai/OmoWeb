@@ -1,6 +1,6 @@
 [versions]
 agp = "8.10.1"
-kotlin = "2.1.0"
+kotlin = "2.4.21"
 
 # Android Auto runs phone activities on the car screen only on Android 15 (API 35) and newer.
 compileSdk = "36"
