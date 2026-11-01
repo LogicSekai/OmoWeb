@@ -1,19 +1,19 @@
 [versions]
-agp = "8.10.1"
-kotlin = "2.1.0"
+agp = "8.13.2"
+kotlin = "2.4.21"
 
 # Android Auto runs phone activities on the car screen only on Android 15 (API 35) and newer.
 compileSdk = "36"
 targetSdk = "36"
 minSdk = "35"
 
-androidxCore = "1.15.0"
+androidxCore = "1.17.0"
 androidxActivity = "1.9.3"
-androidxWebkit = "1.12.1"
+androidxWebkit = "1.18.0"
 carApp = "1.7.0"
 androidxLifecycle = "2.8.7"
-androidxWork = "2.10.0"
-coroutines = "1.9.0"
+androidxWork = "2.12.0"
+coroutines = "1.11.0"
 junit4 = "4.13.2"
 
 [libraries]
