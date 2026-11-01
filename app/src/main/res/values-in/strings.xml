@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Kembali</string>
+    <string name="forward">Maju</string>
+    <string name="reload">Muat ulang</string>
+    <string name="home">YouTube</string>
+    <string name="desktop">Situs desktop</string>
+    <string name="mobile">Situs seluler</string>
+    <string name="address_hint">Cari atau ketik alamat web</string>
+    <string name="parked_only">OmoWeb: hanya untuk saat parkir</string>
+    <string name="remote_hint">Remote: putar / sebelum-berikut = gerak penunjuk atas-bawah · kiri-kanan = geser · pilih = ketuk · kembali = kembali</string>
+    <string name="video_hint">Video: pilih = putar/jeda · kiri-kanan = −10 dtk / +10 dtk · kembali = keluar layar penuh</string>
+    <string name="no_video">Tidak ada video</string>
+    <string name="ultrawide_on">Ultrawide: aktif</string>
+    <string name="ultrawide_off">Ultrawide: mati</string>
+    <string name="media_channel">Video yang diputar</string>
+    <string name="setup_subtitle">YouTube dan web di layar OMOWAY, lewat Android Auto dan OmoAuto.</string>
+    <string name="setup_open_youtube">Buka YouTube</string>
+    <string name="setup_resume_title">Lanjutkan yang terakhir dibuka</string>
+    <string name="setup_resume">Lanjutkan</string>
+    <string name="setup_aa_title">Tampilkan OmoWeb di motor</string>
+    <string name="setup_aa_step1">Buka pengaturan Android Auto (tombol di bawah, atau Pengaturan HP › Perangkat terhubung › Android Auto).</string>
+    <string name="setup_aa_step2">Mode developer: gulir ke bawah sampai Versi, ketuk ±10 kali, lalu ketuk OK.</string>
+    <string name="setup_aa_step3">Ketuk ⋮ (kanan atas) › Developer settings › centang Unknown sources (Sumber tidak dikenal).</string>
+    <string name="setup_aa_step4">Kembali ke pengaturan Android Auto: Sesuaikan peluncur › aktifkan OmoWeb.</string>
+    <string name="setup_aa_step5">Paksa berhenti Android Auto sekali, lalu mulai Android Auto dari OmoAuto: OmoWeb ada di peluncur layar motor.</string>
+    <string name="setup_aa_open">Buka pengaturan Android Auto</string>
+    <string name="setup_account_title">Akun Google</string>
+    <string name="setup_account_signed_in">Sudah masuk ke YouTube. Sesi disimpan dan juga dipakai di layar motor.</string>
+    <string name="setup_account_signed_out">Belum masuk.</string>
+    <string name="setup_account_note">Jika Google menyebut browser tidak aman, OmoWeb otomatis mencoba lagi sebagai Chrome desktop.</string>
+    <string name="setup_sign_in">Masuk dengan Google</string>
+    <string name="setup_sign_out">Keluar</string>
+    <string name="setup_language_title">Bahasa</string>
+    <string name="setup_language_system">Bahasa HP</string>
+    <string name="setup_language_id">Bahasa Indonesia</string>
+    <string name="setup_language_en">English</string>
+    <string name="settings">Pengaturan</string>
+    <string name="login_rejected_retry">Google menolak browser ini: mencoba lagi sebagai Chrome desktop…</string>
+    <string name="login_rejected_final">Google masih menolak masuk di browser ini. Coba lagi nanti, atau pakai OmoWeb tanpa akun.</string>
+    <string name="signed_out">Sudah keluar</string>
+    <!-- Pembaruan aplikasi -->
+    <string name="update_title">Pembaruan aplikasi</string>
+    <string name="update_checking">Memeriksa pembaruan…</string>
+    <string name="update_up_to_date">Kamu sudah memakai versi terbaru.</string>
+    <string name="update_last_checked">Terakhir diperiksa %1$s</string>
+    <string name="update_check">Periksa sekarang</string>
+    <string name="update_available">OmoWeb %1$s sudah tersedia</string>
+    <string name="update_size">Ukuran unduhan %1$s</string>
+    <string name="update_download">Unduh dan pasang</string>
+    <string name="update_downloading">Mengunduh OmoWeb %1$s…</string>
+    <string name="update_cancel">Batal</string>
+    <string name="update_ready">OmoWeb %1$s siap dipasang</string>
+    <string name="update_ready_body">Android akan meminta konfirmasi. Login, riwayat, dan pengaturan tidak hilang.</string>
+    <string name="update_needs_permission">Izinkan \"Instal aplikasi tidak dikenal\" untuk OmoWeb, lalu kembali dan ketuk Pasang sekarang.</string>
+    <string name="update_install">Pasang sekarang</string>
+    <string name="update_failed">Pembaruan gagal</string>
+    <string name="update_failed_network">Tidak bisa terhubung ke GitHub. Periksa koneksi internet lalu coba lagi.</string>
+    <string name="update_failed_checksum">File unduhan rusak (checksum tidak cocok) dan sudah dihapus. Coba lagi.</string>
+    <string name="update_failed_invalid">File yang diunduh bukan rilis OmoWeb yang lebih baru, jadi tidak dipasang.</string>
+    <string name="update_failed_storage">Ruang penyimpanan tidak cukup untuk menyimpan pembaruan.</string>
+    <string name="update_retry">Coba lagi</string>
+    <string name="update_open_page">Buka halaman rilis</string>
+    <string name="update_auto">Periksa otomatis dan beri notifikasi</string>
+    <string name="update_disabled">Salinan OmoWeb ini diperbarui oleh toko aplikasi tempat kamu memasangnya.</string>
+    <string name="update_notify_channel">Pembaruan aplikasi</string>
+    <string name="update_notify_title">OmoWeb %1$s sudah tersedia</string>
+    <string name="update_notify_text">Ketuk untuk memperbarui ke versi terbaru.</string>
+    <!-- Dukung -->
+    <string name="support_title">Dukung OmoWeb</string>
+    <string name="support_body">OmoWeb gratis dan open source, dibuat oleh komunitas Logic Sekai. Donasi dan kontribusi membuatnya terus berkembang.</string>
+    <string name="support_sponsor">GitHub Sponsors</string>
+    <string name="support_kofi">Ko-fi</string>
+    <string name="support_trakteer">Trakteer</string>
+    <string name="support_code">Kode sumber dan Pull Request</string>
+    <string name="support_issue">Laporkan bug atau usulkan fitur</string>
+    <string name="support_community">Komunitas Logic Sekai</string>
+    <!-- Tentang -->
+    <string name="about_title">Tentang &amp; lisensi</string>
+    <string name="about_version">OmoWeb %1$s</string>
+    <string name="about_license">Hak cipta © 2026 Logic Sekai. OmoWeb adalah perangkat lunak bebas di bawah GNU Affero General Public License versi 3 atau lebih baru, dengan ketentuan atribusi di NOTICE. TANPA GARANSI APA PUN. Lisensi komersial: jadi sponsor repo di GitHub Sponsors.</string>
+    <string name="about_credits">Dibangun dengan AndroidX (Core, Activity, WebKit, Car App Library, Lifecycle, WorkManager), Kotlin, dan kotlinx.coroutines (Apache-2.0), serta font Poppins (SIL OFL 1.1).</string>
+    <string name="about_disclaimer">Proyek independen. Tidak berafiliasi, didukung, atau disponsori oleh OMOWAY, Google, YouTube, maupun Android Auto; nama-nama tersebut adalah merek dagang pemiliknya. Gunakan hanya saat berhenti/parkir.</string>
+    <string name="about_license_button">Lisensi lengkap (AGPL-3.0)</string>
+    <string name="about_notices_button">Pemberitahuan pihak ketiga</string>
+    <!-- Desain ulang -->
+    <string name="setup_tagline">YouTube untuk layar OMOWAY</string>
+    <string name="setup_hero_title">YouTube di layar motor</string>
+    <string name="setup_appearance_title">Tampilan</string>
+    <string name="setup_theme_title">Tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="setup_language_system_short">Ikuti HP</string>
+    <string name="setup_language_id_short">Indonesia</string>
+    <string name="setup_language_en_short">English</string>
+    <string name="support_sponsor_caption">Sponsor repository · sekaligus lisensi komersial</string>
+    <string name="support_kofi_caption">Traktir kopi · PayPal atau kartu</string>
+    <string name="support_trakteer_caption">Dukungan dari Indonesia · QRIS, e-wallet, bank</string>
+    <string name="support_code_caption">Perbaiki bug, tambah fitur, perbaiki terjemahan</string>
+    <string name="support_issue_caption">Sebutkan HP, versi Android, dan versi OmoAuto</string>
+    <string name="support_community_caption">logicsekai.com</string>
+    <string name="about_license_caption">GNU AGPL-3.0-or-later dan ketentuan atribusi</string>
+    <string name="about_notices_caption">Pustaka yang dipakai OmoWeb</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Remote-control pointer: white arrow with a dark outline, tip at (2,2). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FF1B1F3B"
+        android:strokeWidth="1.6"
+        android:strokeLineJoin="round"
+        android:pathData="M2,2L2,22L7.5,17L11.5,26L15,24.5L11,15.8L18.5,15.8Z" />
+</vector>

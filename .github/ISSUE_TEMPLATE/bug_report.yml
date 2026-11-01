@@ -1,0 +1,61 @@
+name: Laporan bug / Bug report
+description: Laporkan masalah di OmoWeb
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah melapor! Untuk **celah keamanan**, jangan pakai form ini; lihat SECURITY.md.
+  - type: textarea
+    id: what
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan masalahnya dan apa yang seharusnya terjadi.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      placeholder: |
+        1. Mulai Android Auto dari OmoAuto
+        2. Buka OmoWeb di layar motor, putar video
+        3. Tekan Ultrawide di Kontrol OmoAuto
+        4. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: screen
+    attributes:
+      label: Terjadi di layar mana?
+      options:
+        - Layar motor (lewat Android Auto)
+        - Layar HP
+        - Keduanya
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versi OmoWeb dan OmoAuto
+      description: Lihat kartu "Tentang & lisensi" di OmoWeb dan menu Tentang di OmoAuto
+      placeholder: OmoWeb 1.0.0 (100), OmoAuto 0.3.1 (301)
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: HP, versi Android, versi Android Auto
+      placeholder: Samsung S24, Android 15, Android Auto 13.4
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Halaman / video (bila relevan)
+      placeholder: https://m.youtube.com/watch?v=...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshot / info tambahan

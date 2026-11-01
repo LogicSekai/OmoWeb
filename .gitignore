@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------
+# OmoWeb .gitignore
+# ---------------------------------------------------------------
+
+# Gradle / Kotlin
+.gradle/
+build/
+.kotlin/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / IntelliJ
+/local.properties
+/captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+.idea/
+.navigation/
+
+# Build outputs (APK/AAB are published via GitHub Releases, not committed)
+/dist/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+output-metadata.json
+
+# Signing & secrets — never commit these
+/keystore/
+/keystore.properties
+*.jks
+*.keystore
+google-services.json
+.env
+.env.*
+
+# Local helper state
+/scripts/.wifi-device
+/verify-build.bat
+/build-log.txt
+*.log
+
+# Local archives and reference material (third-party APKs, screenshots)
+/OmoWeb-src.zip
+/_reference/
+
+# Temporary folder from repo setup (move its contents into .github/, then delete it)
+/_pindahkan-ke-.github/
+
+# Editors
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

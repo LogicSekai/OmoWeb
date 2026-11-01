@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">OmoWeb</string>
+    <string name="back">Back</string>
+    <string name="forward">Forward</string>
+    <string name="reload">Reload</string>
+    <string name="home">YouTube</string>
+    <string name="desktop">Desktop site</string>
+    <string name="mobile">Mobile site</string>
+    <string name="address_hint">Search or type a web address</string>
+    <string name="parked_only">OmoWeb: for use while parked only</string>
+    <string name="remote_hint">Remote: rotate / prev-next = move pointer up-down · left-right = move sideways · select = tap · back = back</string>
+    <string name="video_hint">Video: select = play/pause · left-right = −10 s / +10 s · back = exit full screen</string>
+    <string name="no_video">No video</string>
+    <string name="ultrawide_on">Ultrawide: on</string>
+    <string name="ultrawide_off">Ultrawide: off</string>
+    <string name="media_channel">Playing video</string>
+    <string name="setup_title" translatable="false">OmoWeb</string>
+    <string name="setup_subtitle">YouTube and the web on your OMOWAY display, through Android Auto and OmoAuto.</string>
+    <string name="setup_open_youtube">Open YouTube</string>
+    <string name="setup_resume_title">Continue where you left off</string>
+    <string name="setup_resume">Continue</string>
+    <string name="setup_aa_title">Show OmoWeb on the motorcycle</string>
+    <string name="setup_aa_step1">Open Android Auto settings (button below, or Phone settings › Connected devices › Android Auto).</string>
+    <string name="setup_aa_step2">Developer mode: scroll down to Version, tap it about 10 times, then tap OK.</string>
+    <string name="setup_aa_step3">Tap ⋮ (top right) › Developer settings › tick Unknown sources.</string>
+    <string name="setup_aa_step4">Back in Android Auto settings: Customize launcher › turn on OmoWeb.</string>
+    <string name="setup_aa_step5">Force stop Android Auto once, then start Android Auto from OmoAuto: OmoWeb is in the launcher on the motorcycle.</string>
+    <string name="setup_aa_open">Open Android Auto settings</string>
+    <string name="setup_account_title">Google account</string>
+    <string name="setup_account_signed_in">Signed in to YouTube. The session is kept and also used on the motorcycle.</string>
+    <string name="setup_account_signed_out">Not signed in.</string>
+    <string name="setup_account_note">If Google says the browser is not secure, OmoWeb retries automatically as desktop Chrome.</string>
+    <string name="setup_sign_in">Sign in with Google</string>
+    <string name="setup_sign_out">Sign out</string>
+    <string name="setup_language_title">Language</string>
+    <string name="setup_language_system">Phone language</string>
+    <string name="setup_language_id">Bahasa Indonesia</string>
+    <string name="setup_language_en">English</string>
+    <string name="settings">Settings</string>
+    <string name="login_rejected_retry">Google refused this browser: retrying as desktop Chrome…</string>
+    <string name="login_rejected_final">Google still refuses the sign-in in this browser. Try again later, or sign in to YouTube on a computer and use OmoWeb without an account.</string>
+    <string name="signed_out">Signed out</string>
+    <!-- App update -->
+    <string name="update_title">App update</string>
+    <string name="update_checking">Checking for updates…</string>
+    <string name="update_up_to_date">You have the latest version.</string>
+    <string name="update_last_checked">Last checked %1$s</string>
+    <string name="update_check">Check now</string>
+    <string name="update_available">OmoWeb %1$s is available</string>
+    <string name="update_size">Download size %1$s</string>
+    <string name="update_download">Download and install</string>
+    <string name="update_downloading">Downloading OmoWeb %1$s…</string>
+    <string name="update_cancel">Cancel</string>
+    <string name="update_ready">OmoWeb %1$s is ready to install</string>
+    <string name="update_ready_body">Android will ask you to confirm. Your sign-in, history and settings are kept.</string>
+    <string name="update_needs_permission">Allow \"Install unknown apps\" for OmoWeb, then come back and tap Install now.</string>
+    <string name="update_install">Install now</string>
+    <string name="update_failed">Update failed</string>
+    <string name="update_failed_network">Could not reach GitHub. Check your internet connection and try again.</string>
+    <string name="update_failed_checksum">The download was damaged (checksum mismatch) and was deleted. Try again.</string>
+    <string name="update_failed_invalid">The downloaded file is not a newer OmoWeb release, so it was not installed.</string>
+    <string name="update_failed_storage">Not enough storage to save the update.</string>
+    <string name="update_retry">Try again</string>
+    <string name="update_open_page">Open release page</string>
+    <string name="update_auto">Check automatically and notify me</string>
+    <string name="update_disabled">This copy of OmoWeb is updated by the store you installed it from.</string>
+    <string name="update_notify_channel">App updates</string>
+    <string name="update_notify_title">OmoWeb %1$s is available</string>
+    <string name="update_notify_text">Tap to update to the latest version.</string>
+    <!-- Support -->
+    <string name="support_title">Support OmoWeb</string>
+    <string name="support_body">OmoWeb is free and open source, made by the Logic Sekai community. Donations and contributions keep it going.</string>
+    <string name="support_sponsor">GitHub Sponsors</string>
+    <string name="support_kofi">Ko-fi</string>
+    <string name="support_trakteer">Trakteer</string>
+    <string name="support_code">Source code and pull requests</string>
+    <string name="support_issue">Report a bug or suggest a feature</string>
+    <string name="support_community">Logic Sekai community</string>
+    <!-- About -->
+    <string name="about_title">About &amp; license</string>
+    <string name="about_version">OmoWeb %1$s</string>
+    <string name="about_license">Copyright © 2026 Logic Sekai. OmoWeb is free software under the GNU Affero General Public License, version 3 or later, with the attribution terms in NOTICE. It comes with ABSOLUTELY NO WARRANTY. Commercial license: sponsor the repository on GitHub Sponsors.</string>
+    <string name="about_credits">Built with AndroidX (Core, Activity, WebKit, Car App Library, Lifecycle, WorkManager), Kotlin and kotlinx.coroutines (Apache-2.0), and the Poppins font (SIL OFL 1.1).</string>
+    <string name="about_disclaimer">Independent project. Not affiliated with, endorsed or sponsored by OMOWAY, Google, YouTube or Android Auto; their names are trademarks of their owners. Use only while parked.</string>
+    <string name="about_license_button">Full license (AGPL-3.0)</string>
+    <string name="about_notices_button">Third-party notices</string>
+    <!-- Redesign -->
+    <string name="setup_tagline">YouTube for your OMOWAY display</string>
+    <string name="setup_hero_title">YouTube on your motorcycle</string>
+    <string name="setup_appearance_title">Appearance</string>
+    <string name="setup_theme_title">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="setup_language_system_short">Phone</string>
+    <string name="setup_language_id_short">Indonesia</string>
+    <string name="setup_language_en_short">English</string>
+    <string name="support_sponsor_caption">Sponsor the repository · also the commercial license</string>
+    <string name="support_kofi_caption">Buy us a coffee · PayPal or card</string>
+    <string name="support_trakteer_caption">Support from Indonesia · QRIS, e-wallet, bank</string>
+    <string name="support_code_caption">Fix bugs, add features, improve translations</string>
+    <string name="support_issue_caption">Tell us your phone, Android and OmoAuto versions</string>
+    <string name="support_community_caption">logicsekai.com</string>
+    <string name="about_license_caption">GNU AGPL-3.0-or-later and attribution terms</string>
+    <string name="about_notices_caption">Libraries OmoWeb is built with</string>
+</resources>

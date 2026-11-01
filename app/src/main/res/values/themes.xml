@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light (phone, system light). The phone screen can also be forced light/dark in
+         OmoWeb's Appearance settings (OmoTheme); the motorcycle screen is always dark. -->
+    <style name="Theme.OmoWeb" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/omo_background</item>
+        <item name="android:colorAccent">#FFFF7A4F</item>
+        <item name="android:colorPrimary">#FFFF7A4F</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
