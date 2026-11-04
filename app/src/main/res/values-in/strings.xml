@@ -7,7 +7,6 @@
     <string name="desktop">Situs desktop</string>
     <string name="mobile">Situs seluler</string>
     <string name="address_hint">Cari atau ketik alamat web</string>
-    <string name="parked_only">OmoWeb: hanya untuk saat parkir</string>
     <string name="remote_hint">Remote: putar / sebelum-berikut = gerak penunjuk atas-bawah · kiri-kanan = geser · pilih = ketuk · kembali = kembali</string>
     <string name="video_hint">Video: pilih = putar/jeda · kiri-kanan = −10 dtk / +10 dtk · kembali = keluar layar penuh</string>
     <string name="no_video">Tidak ada video</string>

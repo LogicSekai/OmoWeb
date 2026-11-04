@@ -278,13 +278,6 @@ class PhoneSetupView(
         }
         accentRow(column, R.string.about_license_button, R.string.about_license_caption, links.sourceUrl.ifNotBlank { "$it/blob/main/LICENSE" }, c.blue)
         accentRow(column, R.string.about_notices_button, R.string.about_notices_caption, links.sourceUrl.ifNotBlank { "$it/blob/main/THIRD-PARTY-NOTICES.md" }, c.blue)
-
-        // ---- Parked-only notice ----
-        column.addView(label(context.getString(R.string.parked_only), 13f, c.accentDeep, fontSemiBold).apply {
-            gravity = Gravity.CENTER
-            setPadding(dp(16), dp(12), dp(16), dp(12))
-            background = rounded(c.accentSoft, dpf(16f))
-        }, LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT).apply { topMargin = dp(24) })
     }
 
     fun update(state: State) {

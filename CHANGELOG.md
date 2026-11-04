@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 — 2026-11-04
+
+### Layar motor
+- **Toolbar dihapus di Android Auto**: saat dibuka di layar motor/mobil, OmoWeb tidak lagi menampilkan
+  toolbar melayang (yang sebelumnya muncul lalu bersembunyi). Halaman kini memakai seluruh layar dan
+  toolbar tidak muncul lagi saat bagian atas disentuh atau penunjuk dibawa ke atas. Kembali tetap lewat
+  tombol Kembali OmoAuto; toolbar di layar HP tidak berubah.
+- **Pemberitahuan "hanya untuk saat parkir" dihapus**: tidak lagi muncul sebagai pesan saat OmoWeb dibuka
+  di layar motor maupun di halaman pengaturan HP.
+
 ## 1.0.0 — 2026-11-01
 
 Rilis publik pertama OmoWeb.

@@ -66,7 +66,7 @@ import org.json.JSONObject
  * other input sources. They drive an on-screen pointer (up/down, left/right, select = tap); in
  * full-screen video they become play/pause and seek. Touch works as usual and hides the pointer.
  *
- * On the car screen the toolbar floats over the page and hides itself. OmoAuto's video buttons
+ * On the car screen there is no toolbar: the page fills the whole screen. OmoAuto's video buttons
  * (Controls › Media) switch full screen, "fill width", next / previous video, play and seek.
  *
  * Sound: videos start unmuted; see [WebScripts.UNMUTE].
@@ -114,7 +114,6 @@ class MainActivity : ComponentActivity() {
     private val prefs by lazy { getSharedPreferences(PREFS, MODE_PRIVATE) }
     private val hideCursor = Runnable { cursor.visibility = View.GONE }
     private val hideOsd = Runnable { osd.animate().alpha(0f).setDuration(250).start() }
-    private val hideBar = Runnable { setBarShown(false) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -157,7 +156,6 @@ class MainActivity : ComponentActivity() {
             else -> showSetup()
         }
         val onPhone = !onCarScreen
-        if (!onPhone) Toast.makeText(this, R.string.parked_only, Toast.LENGTH_LONG).show()
         if (onPhone) {
             updates.check()
             lifecycleScope.launch {
@@ -382,7 +380,6 @@ class MainActivity : ComponentActivity() {
         val scale = root.width * TRACKPAD_SPEED
         pointer.moveBy(dx * scale, dy * scale)
         placeCursor()
-        if (pointer.y < dp(56)) showBarForAWhile()
     }
 
     private fun trackpadTap() {
@@ -534,7 +531,6 @@ class MainActivity : ComponentActivity() {
         if (!injectingTouch && ev.actionMasked == MotionEvent.ACTION_DOWN) {
             root.removeCallbacks(hideCursor)
             cursor.visibility = View.GONE
-            if (ev.y < root.height * 0.2f) showBarForAWhile()
         }
         return super.dispatchTouchEvent(ev)
     }
@@ -569,7 +565,6 @@ class MainActivity : ComponentActivity() {
         }
         val move = pointer.move(action, SystemClock.uptimeMillis())
         placeCursor()
-        if (pointer.y < dp(56) || move.overflowY < 0f) showBarForAWhile()
         if (move.overflowY != 0f) {
             val css = (move.overflowY * 4 / resources.displayMetrics.density).toInt()
             web.evaluateJavascript(WebScripts.scroll(css), null)
@@ -712,14 +707,12 @@ class MainActivity : ComponentActivity() {
         }
 
         if (onCarScreen) {
-            // Car screen: the page gets the whole height; the toolbar floats on top and hides.
-            bar.setBackgroundColor(BAR_COLOR_FLOATING)
+            // Car screen (Android Auto): no toolbar at all, the page gets the whole screen.
+            // The bar is still built (its views hold state) but never added to the layout.
             content = FrameLayout(this).apply {
                 addView(web, FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
                 addView(progress, FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(3), Gravity.TOP))
-                addView(bar, FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.TOP))
             }
-            address.setOnFocusChangeListener { _, focused -> if (focused) setBarShown(true) else showBarForAWhile() }
         } else {
             content = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
@@ -781,21 +774,6 @@ class MainActivity : ComponentActivity() {
         setOnClickListener { onClick() }
     }
 
-    /** Car screen only: shows the floating toolbar, then hides it after [BAR_TIMEOUT_MS]. */
-    private fun showBarForAWhile() {
-        if (!onCarScreen) return
-        setBarShown(true)
-        root.removeCallbacks(hideBar)
-        if (!address.hasFocus()) root.postDelayed(hideBar, BAR_TIMEOUT_MS)
-    }
-
-    private fun setBarShown(shown: Boolean) {
-        if (!onCarScreen) return
-        if (!shown && address.hasFocus()) return
-        bar.animate().cancel()
-        bar.animate().translationY(if (shown) 0f else -bar.height.toFloat() - dp(4)).setDuration(180).start()
-    }
-
     private fun modeIcon() = if (desktopMode) R.drawable.ic_mobile else R.drawable.ic_desktop
     private fun modeLabel() = if (desktopMode) R.string.mobile else R.string.desktop
 
@@ -849,7 +827,6 @@ class MainActivity : ComponentActivity() {
 
             override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
                 if (GoogleLogin.isRejected(url)) onLoginRejected()
-                showBarForAWhile()
                 if (!address.hasFocus()) address.setText(url)
                 updateNavButtons()
             }
@@ -957,7 +934,6 @@ class MainActivity : ComponentActivity() {
     override fun onDestroy() {
         root.removeCallbacks(hideCursor)
         root.removeCallbacks(hideOsd)
-        root.removeCallbacks(hideBar)
         media?.release()
         media = null
         hideCustomView()
@@ -980,9 +956,7 @@ class MainActivity : ComponentActivity() {
         const val CURSOR_TIMEOUT_MS = 8_000L
         const val DESKTOP_USER_AGENT =
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
-        const val BAR_TIMEOUT_MS = 3_500L
         const val BAR_COLOR = 0xFF1B1F3B.toInt()
-        const val BAR_COLOR_FLOATING = 0xE61B1F3B.toInt()
         const val FIELD_COLOR = 0xFF3C467D.toInt()
         const val ACCENT = 0xFFFF7A4F.toInt()
     }
